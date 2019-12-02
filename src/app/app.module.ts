@@ -1,19 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
-import { GeneralComponent } from './general/general.component';
-import { CapitanComponent } from './capitan/capitan.component';
-import { CapralComponent } from './capral/capral.component';
+import { KeyboardComponent } from './keyboard/keyboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GeneralComponent,
-    CapitanComponent,
-    CapralComponent
+    KeyboardComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   bootstrap: [AppComponent]
 })

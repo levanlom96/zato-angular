@@ -1,0 +1,17 @@
+.keyboard {
+    display: flex;
+}
+
+.keyboard-button {
+    width: 33.3333%;
+    padding: 15px;
+    font-size: 25px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.keyboard-button:hover {
+    background: lightseagreen;
+}
