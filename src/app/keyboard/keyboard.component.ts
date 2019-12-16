@@ -1,23 +1,16 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { SuperService } from '../services/super.service';
 @Component({
   selector: 'app-keyboard',
   templateUrl: './keyboard.component.html',
-  styleUrls: ['./keyboard.component.css']
+  styleUrls: ['./keyboard.component.css'],
 })
 export class KeyboardComponent implements OnInit {
+  constructor(private superService: SuperService) { }
+  ngOnInit() { }
 
-  @Output() keyIsClicked = new EventEmitter(); // Vaswavle rogor unda eyvira
-
-  keys = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'Delete'];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  clicked(racGinda) {
-    this.keyIsClicked.emit(racGinda);  // iyvire, ra iyviros aris racGinda
+  write(chichikia) {
+    this.superService.fireText(chichikia);
   }
 
 }

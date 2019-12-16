@@ -1,3 +1,23 @@
-<div class="keyboard">
-  <div class="keyboard-button" *ngFor="let key of keys" (click)="clicked(key)"> {{ key }} </div>
+<div class="button" (click)="write('1')">
+    1
+</div>
+
+<div class="button" (click)="write('2')">
+    2
+</div>
+
+<div class="button" (click)="write('3')">
+    3
+</div>
+
+<div class="button" (click)="write('4')">
+    4
+</div>
+
+<div class="button" (click)="write('5')">
+    5
+</div>
+
+<div class="button" (click)="write('DELETE')">
+    DELETE
 </div>

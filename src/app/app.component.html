@@ -1,5 +1,6 @@
-<input type="text" [(ngModel)]="text">
-
-
-<!-- $event aris rac daiyvira -->
-<app-keyboard (keyIsClicked)="usmine($event)" ></app-keyboard>
+<div class="app">
+    <app-blank *ngFor="let item of blanks" [id]="item.id"></app-blank>
+    <br/>
+    <br/>
+    <app-keyboard></app-keyboard>
+</div>
