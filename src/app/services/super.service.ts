@@ -3,7 +3,6 @@ import { Subject } from 'rxjs';
 
 @Injectable()
 export class SuperService {
-  activeBlank = 1;
   activeItemSubject = new Subject();
   textSubject = new Subject();
 
@@ -22,7 +21,6 @@ export class SuperService {
   }
 
   changeActiveItem(param) {
-    this.activeBlank = param;
     this.activeItemSubject.next(param);
   }
 }

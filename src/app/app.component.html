@@ -1,6 +1,5 @@
-<div class="app">
-    <app-blank *ngFor="let item of blanks" [id]="item.id"></app-blank>
-    <br/>
-    <br/>
-    <app-keyboard></app-keyboard>
-</div>
+<a [routerLink]="['listing']"> Listing </a>
+<br/>
+<a [routerLink]="['']"> home </a>
+
+<router-outlet></router-outlet>

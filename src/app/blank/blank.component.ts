@@ -23,9 +23,7 @@ export class BlankComponent implements OnInit {
     this.superService.getItemSubject().subscribe(
       (param: number) => {
 
-        if (param === this.id) {
-          this.isActive = true;
-        } else {
+        if (param !== this.id) {
           this.isActive = false;
         }
 
@@ -50,6 +48,7 @@ export class BlankComponent implements OnInit {
   }
 
   makeActive() {
+    this.isActive = true;
     this.superService.changeActiveItem(this.id);
   }
 
